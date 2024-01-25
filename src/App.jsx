@@ -1,6 +1,8 @@
 import { useState } from "react"
 
 import "./App.css"
+import "./index.css"
+import ComplexState from "./ComplexState"
 
 function App() {
   const [inputValue, setInputValue] = useState("Hello")
@@ -12,8 +14,9 @@ function App() {
 
   return (
     <>
-      <input placeholder="enter something..." onChange={onChange} />
-      {inputValue}
+      {/* <input placeholder="enter something..." onChange={onChange} />
+      {inputValue} */}
+      <ComplexState />
     </>
   )
 }
